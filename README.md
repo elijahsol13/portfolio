@@ -4,9 +4,9 @@
 
 ## Публикация в Cloudflare
 
-Публичные адреса: `https://portfolio.rustycat.cc/` и `https://portfolio.elijah-rustycat.workers.dev/`. После обновления `main` 20 октября 2026 года оба адреса продолжали показывать предыдущую версию. Способ развёртывания действующего проекта нужно проверить в Cloudflare Dashboard: по публичному адресу `workers.dev` нельзя достоверно определить, подключён ли Git к конкретному Worker или Pages-проекту.
+Публичные адреса: `https://portfolio.rustycat.cc/` и `https://portfolio.elijah-rustycat.workers.dev/`. Сайт развёрнут в существующий Cloudflare Worker `portfolio` через Wrangler. 20 октября 2026 года новую версию проверили по обоим адресам; текущая версия Worker на момент публикации — `9bc37e79-4d7a-4140-aa38-43ed736db9f8`.
 
-Исходники: `elijahsol13/portfolio`, ветка `main`. Публикуемый каталог: `dist/`; сборка не требуется. Для Git-интеграции Pages: framework `None`, build command пустой, output directory `dist`, root directory — корень репозитория. Для Worker с assets конфигурация может отличаться; сначала определить существующий проект, затем публиковать в него.
+Исходники: `elijahsol13/portfolio`, ветка `main`. Публикуемый каталог: `dist/`; сборка не требуется. Обновление существующего Worker из корня репозитория: `npx wrangler deploy --name portfolio --assets dist --compatibility-date 2026-10-19`. Для публикации требуется авторизация Wrangler в аккаунте владельца. Публикация из GitHub автоматически пока не настроена.
 
 После выкладки проверить обе языковые версии, страницы кейсов и демоверсии по обоим публичным адресам.
 
