@@ -11,9 +11,9 @@ if (lightbox) {
     button.addEventListener('click', () => {
       trigger = button;
       const src = button.getAttribute('data-full');
-      if (!/^assets\/(?:homeasy-0[1-3]-(?:feed|filters|detail)|crm-demo-0[1-3]-(?:board|order|calendar))\.png$/.test(src)) return;
+      if (!/^(?:\.\.\/)?assets\/(?:homeasy-0[1-3]-(?:feed|filters|detail)|crm-demo-0[1-3]-(?:board|order|calendar))\.png$/.test(src)) return;
       preview.src = src;
-      preview.alt = button.getAttribute('data-alt') || 'Демонстрационный скриншот';
+      preview.alt = button.getAttribute('data-alt') || 'Demo screenshot';
       lightbox.showModal();
       close.focus();
     });
