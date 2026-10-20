@@ -4,7 +4,7 @@
 
 ## Публикация в Cloudflare
 
-Публичные адреса: `https://portfolio.rustycat.cc/` и `https://portfolio.elijah-rustycat.workers.dev/`. Сайт развёрнут в существующий Cloudflare Worker `portfolio` через Wrangler. 20 октября 2026 года новую версию проверили по обоим адресам; текущая версия Worker на момент публикации — `9bc37e79-4d7a-4140-aa38-43ed736db9f8`.
+Публичные адреса: `https://portfolio.rustycat.cc/` и `https://portfolio.elijah-rustycat.workers.dev/`. Сайт развёрнут в существующий Cloudflare Worker `portfolio` через Wrangler. 20 октября 2026 года расширенную версию с четырьмя направлениями компетенций проверили по обоим адресам; текущая версия Worker на момент публикации — `615df60b-ef08-4a67-b09e-aa794d84f961`.
 
 Исходники: `elijahsol13/portfolio`, ветка `main`. Публикуемый каталог: `dist/`; сборка не требуется. Обновление существующего Worker из корня репозитория: `npx wrangler deploy --name portfolio --assets dist --compatibility-date 2026-10-19`. Для публикации требуется авторизация Wrangler в аккаунте владельца. В Cloudflare у Worker есть Builds, привязанные к `main`, но после коммитов 20 октября автоматический деплой не появился; конфигурацию Builds стоит проверить перед следующим обновлением.
 
