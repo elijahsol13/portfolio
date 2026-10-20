@@ -245,3 +245,29 @@ h1 em,h2 em{font-style:normal;color:var(--sea)}
 .live-site-preview figcaption{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;padding:17px 24px;font-size:13px;color:#62746f}
 .live-site-preview figcaption a{color:#087b72;font-weight:800}
 .live-site-preview figcaption a:hover{text-decoration:underline}
+
+/* Professional experience and language navigation */
+.language-switch{display:inline-flex;align-items:center;justify-content:center;min-width:42px;height:36px;border:1px solid #c9d9d0;border-radius:9px;color:#175c54;font-size:12px;font-weight:850;letter-spacing:.04em}
+.language-switch:hover,.language-switch:focus-visible{background:#e8f5ed;border-color:#7da995}
+.brand-icon{font-size:12px!important;font-weight:850;letter-spacing:-.06em}
+.experience-section{background:#f6f8f4}
+.experience-list{border-top:1px solid #d5e0d9}
+.experience-item{display:grid;grid-template-columns:minmax(190px,.32fr) 1fr;gap:42px;padding:34px 0;border-bottom:1px solid #d5e0d9}
+.experience-date{padding-top:6px;color:#526b62;font-size:13px;font-weight:750}
+.experience-heading{display:flex;align-items:baseline;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.experience-heading h3{font-size:25px;letter-spacing:-.04em;margin:0}
+.experience-heading>span{color:#367568;font-size:13px;font-weight:750}
+.experience-content>p,.experience-content li{color:#586b64;font-size:14px;line-height:1.75}
+.experience-content ul{padding-left:19px;margin:14px 0 20px}
+.experience-content li+li{margin-top:5px}
+.experience-role-note{margin:8px 0 0;font-weight:700;color:#175c54!important}
+.experience-tags{display:flex;gap:7px;flex-wrap:wrap}
+.experience-tags span{padding:6px 9px;border-radius:8px;background:#e8f0e9;color:#42665a;font-size:11px;font-weight:720}
+@media(max-width:760px){.experience-item{grid-template-columns:1fr;gap:11px;padding:25px 0}.experience-heading{display:block}.experience-heading>span{display:block;margin-top:4px}}
+.profile-facts{display:flex;gap:12px 28px;flex-wrap:wrap;margin-top:22px;padding-top:18px;border-top:1px solid #d9e2dc;color:#526b62;font-size:13px}
+.profile-facts p{margin:0;line-height:1.7}
+.profile-facts strong{color:#183a3a;margin-right:8px}
+.hero-meta span{color:#596b64}
+.contact-links a span:first-child{color:#557168}
+.footer-inner>span:not(.brand),.footer-inner>a:not(.brand){color:#61736c}
+@media(max-width:430px){.nav-inner .brand{font-size:16px;gap:6px}.nav-inner .brand-icon{width:29px;height:29px}.nav-inner .language-switch{min-width:36px;height:34px}.nav-cta{padding:7px 9px}}

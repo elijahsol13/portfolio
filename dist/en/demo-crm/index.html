@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Auto Service CRM — Interactive Demo</title>
+  <link rel="stylesheet" href="../../demo-crm/demo.css">
+  <script defer src="demo-en.js"></script>
+</head>
+<body>
+<div class="demo-banner"><span class="demo-dot"></span><b>INTERACTIVE RECONSTRUCTION</b><span>All customers, jobs and amounts are fictional · no server or data submission</span><a href="../autoservice.html">← Back to case study</a><a href="../../demo-crm/index.html" lang="ru" hreflang="ru">RU</a></div>
+<div class="app">
+  <aside class="sidebar">
+    <div class="logo"><div class="logo-mark">✳</div><span>DEMO<span class="logo-accent">CRM</span><small>AUTO SERVICE SYSTEM</small></span></div>
+    <div class="menu-group">WORKSPACE</div>
+    <nav aria-label="Demo sections">
+      <a data-tab="dashboard" href="#dashboard" class="selected"><span class="ico">▦</span> Job board</a>
+      <a data-tab="order" href="#order"><span class="ico">▤</span> Job record</a>
+      <a data-tab="calendar" href="#calendar"><span class="ico">▦</span> Calendar</a>
+    </nav>
+    <div class="sidebar-bottom"><span class="avatar">D</span><div><b>Demo service advisor</b><small>Demo profile</small></div></div>
+  </aside>
+  <main class="main">
+    <header class="app-header"><div><span class="crumb">WORKSPACE <span>/</span> <strong id="crumb">OVERVIEW</strong></span></div><div class="header-right"><span class="offline">● Local simulation</span><span class="user-mark">D</span></div></header>
+    <div class="content">
+      <section class="screen" id="dashboard" data-screen="dashboard">
+        <div class="headline"><div><p class="eyebrow">JOB BOARD · DEMO</p><h1>Workspace</h1><p class="subtitle">Job statuses and current workload. Sample jobs only.</p></div><a href="#order" class="cta">View job ↗</a></div>
+        <div class="stats"><div class="stat"><span>OPEN JOBS</span><strong>06</strong><small>In demo set</small></div><div class="stat"><span>IN PROGRESS</span><strong>02</strong><small>Sample entries</small></div><div class="stat"><span>READY FOR PICKUP</span><strong>01</strong><small>Sample job</small></div><div class="stat"><span>BAYS IN USE</span><strong>02<span class="deemph">/03</span></strong><small>Sample schedule</small></div></div>
+        <div class="panel-label"><h2>Queue and statuses</h2><span>SAMPLE DATA · 6 JOBS</span></div>
+        <div class="kanban">
+          <div class="column col-new"><div class="column-title"><span>New requests</span><small>1</small></div><a href="#order" class="order-card"><div class="card-head"><b>No. D-1042</b><span>Today</span></div><h3>Renault Logan</h3><p>Sample customer 1</p><div class="pill-row"><span class="pill blue">New</span><span class="pill">Diagnostics</span></div><div class="card-foot">Brake inspection <b>→</b></div></a></div>
+          <div class="column col-queue"><div class="column-title"><span>Scheduled</span><small>1</small></div><div class="order-card"><div class="card-head"><b>No. D-1043</b><span>Tomorrow</span></div><h3>Ford Focus</h3><p>Sample customer 2</p><div class="pill-row"><span class="pill purple">Scheduled</span></div><div class="card-foot">Oil change <b>→</b></div></div></div>
+          <div class="column col-work"><div class="column-title"><span>In progress</span><small>2</small></div><div class="order-card"><div class="card-head"><b>No. D-1039</b><span>Bay 1</span></div><h3>Volkswagen Polo</h3><p>Sample customer 3</p><div class="pill-row"><span class="pill orange">In progress</span></div><div class="card-foot">Suspension repair <b>→</b></div></div><div class="order-card"><div class="card-head"><b>No. D-1040</b><span>Bay 2</span></div><h3>Hyundai Solaris</h3><p>Sample customer 4</p><div class="pill-row"><span class="pill orange">In progress</span></div><div class="card-foot">Brake pad replacement <b>→</b></div></div></div>
+          <div class="column col-parts"><div class="column-title"><span>Waiting for parts</span><small>1</small></div><div class="order-card"><div class="card-head"><b>No. D-1036</b><span>Waiting</span></div><h3>Kia Rio</h3><p>Sample customer 5</p><div class="pill-row"><span class="pill red">Parts</span></div><div class="card-foot">Rear suspension <b>→</b></div></div></div>
+          <div class="column col-ready"><div class="column-title"><span>Completed</span><small>1</small></div><div class="order-card"><div class="card-head"><b>No. D-1035</b><span>Ready</span></div><h3>Skoda Octavia</h3><p>Sample customer 6</p><div class="pill-row"><span class="pill green">Ready for pickup</span></div><div class="card-foot">Diagnostics <b>→</b></div></div></div>
+        </div>
+      </section>
+      <section class="screen" id="order" data-screen="order" hidden>
+        <div class="headline"><div><p class="eyebrow">JOB RECORD · DEMO</p><h1>Job record No. D-1042</h1><p class="subtitle">Sample customer 1 · Renault Logan · all data is fictional</p></div><a href="#dashboard" class="cta secondary">← Back to job board</a></div>
+        <div class="order-layout"><div class="stack"><section class="box"><div class="box-heading"><h2>Vehicle and customer</h2><span class="pill blue">New request</span></div><div class="info-grid"><div><small>VEHICLE</small><b>Renault Logan · 2018</b></div><div><small>REGISTRATION</small><b>DEMO-000</b></div><div><small>CUSTOMER</small><b>Sample customer 1</b></div><div><small>PHONE</small><b>Not included in demo</b></div></div></section><section class="box"><div class="box-heading"><h2>Schedule and bay</h2><span class="tag">SCHEDULING</span></div><div class="info-grid"><div><small>BAY</small><b>Lift 1</b></div><div><small>DATE AND TIME</small><b>Oct 20, 10:30</b></div><div><small>ASSIGNED TO</small><b>Mechanic (demo)</b></div><div><small>STAGE</small><b>Booking awaiting confirmation</b></div></div></section></div>
+        <div class="stack"><section class="box"><div class="box-heading"><h2>Work and parts</h2><span class="tag">SAMPLE AMOUNTS</span></div><div class="line-item"><div><b>Brake system diagnostics</b><small>Service · demo</small></div><strong>1 500 ₽</strong></div><div class="line-item"><div><b>Brake pad set</b><small>Part · demo</small></div><strong>2 400 ₽</strong></div><div class="total"><span>Job total</span><strong>3 900 ₽</strong></div></section><section class="box"><div class="box-heading"><h2>Job events</h2></div><div class="event"><span>●</span><div><b>Sample request created</b><small>Demo scenario</small></div></div><div class="event"><span>●</span><div><b>Service bay assigned</b><small>Lift 1</small></div></div><p class="readonly">All data on this page is static. Saving, notifications and API calls are disabled.</p></section></div></div>
+      </section>
+      <section class="screen" id="calendar" data-screen="calendar" hidden>
+        <div class="headline"><div><p class="eyebrow">CALENDAR · DEMO</p><h1>Schedule workload</h1><p class="subtitle">Vehicle bookings by service bay. Sample schedule for October 19–23.</p></div><a href="#order" class="cta">Job record ↗</a></div>
+        <section class="calendar-box"><div class="cal-toolbar"><div><strong>October 19–23, 2026</strong><span>Sample schedule · no sync</span></div><span class="cal-key"><i></i> Scheduled <i class="orange-key"></i> In progress</span></div><div class="cal-scroll"><div class="calendar-grid"><div class="cal-empty">BAY / DAY</div><div class="cal-head">MON <b>19</b></div><div class="cal-head">TUE <b>20</b></div><div class="cal-head">WED <b>21</b></div><div class="cal-head">THU <b>22</b></div><div class="cal-head">FRI <b>23</b></div>
+        <div class="cal-side">Lift 1<small>Service bay</small></div><div class="cal-cell"><div class="cal-event work">10:00–12:00<b>VW Polo</b><small>Suspension</small></div></div><div class="cal-cell"><div class="cal-event planned">10:30–12:00<b>Renault Logan</b><small>Diagnostics</small></div></div><div class="cal-cell"></div><div class="cal-cell"><div class="cal-event planned">14:00–15:00<b>Ford Focus</b><small>Oil change</small></div></div><div class="cal-cell"></div>
+        <div class="cal-side">Lift 2<small>Service bay</small></div><div class="cal-cell"><div class="cal-event work">09:00–11:00<b>Hyundai Solaris</b><small>Brake system</small></div></div><div class="cal-cell"></div><div class="cal-cell"><div class="cal-event planned">11:00–13:00<b>Skoda Octavia</b><small>Inspection</small></div></div><div class="cal-cell"></div><div class="cal-cell"><div class="cal-event planned">15:00–17:00<b>Kia Rio</b><small>Suspension</small></div></div>
+        <div class="cal-side">Yard / waiting<small>Waiting area</small></div><div class="cal-cell"></div><div class="cal-cell"><div class="cal-event waiting">09:00–10:00<b>Sample vehicle</b><small>Intake</small></div></div><div class="cal-cell"></div><div class="cal-cell"></div><div class="cal-cell"></div>
+        </div></div></section>
+      </section>
+    </div>
+    <footer class="app-footer">Demo with fictional data · Separate interface model</footer>
+  </main>
+</div>
+</body>
+</html>

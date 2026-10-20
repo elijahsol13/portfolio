@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Interactive Homeasy data processing demo using fictional listings.">
+  <title>Homeasy — Interactive Listing Processing Demo</title>
+  <link rel="alternate" hreflang="ru" href="https://portfolio.rustycat.cc/demo-homeasy/"><link rel="alternate" hreflang="en" href="https://portfolio.rustycat.cc/en/demo-homeasy/">
+  <link rel="stylesheet" href="../../demo-homeasy/demo.css">
+  <script src="demo-en.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#content">Skip to demo</a>
+  <div class="safety"><span class="safety-dot" aria-hidden="true"></span><strong>EDUCATIONAL MODEL</strong> All listings and results are fictional. This demo works offline and does not use an LLM, scrapers or a production database.</div>
+  <header class="header wrap"><a class="brand" href="../homeasy.html" aria-label="Return to the Homeasy case"><span class="logo">⌂</span><span>Homeasy <small>DATA PROCESSING DEMO</small></span></a><a class="back" href="../homeasy.html">← Back to case study</a><a class="back" href="../../demo-homeasy/index.html" lang="ru" hreflang="ru">RU</a></header>
+  <main id="content" class="wrap">
+    <div class="intro"><div><p class="eyebrow">FLOW / INTERACTIVE DEMO</p><h1>From listings<br><em>to clean search results.</em></h1><p class="lede">Process three sample listings. Two describe the same property in different words. See how shared fields help find duplicates and build search results.</p></div><div class="intro-card"><span>In the main app</span><p>The full app uses source adapters, an LLM, rules, and text and image matching. This simplified example shows the main processing steps.</p></div></div>
+    <div class="controls"><div><p class="step-caption">STEP 01 / SOURCE POSTS</p><h2>Three posts, two properties</h2></div><div class="actions"><button class="action-primary" id="run" type="button">Process listings <span aria-hidden="true">↗</span></button><button class="action-reset" id="reset" type="button">Reset</button></div></div>
+    <div class="sources" aria-label="Fictional source listings"><article class="source"><div class="source-top"><span>FB / DEMO-001</span><b>Facebook</b></div><p>For rent: <strong>2BR apartment</strong> in <strong>Toul Kork, Phnom Penh</strong>. <strong>$650/month</strong>, two bathrooms. Photos available.</p></article><article class="source"><div class="source-top"><span>KH / DEMO-002</span><b>Khmer24</b></div><p>Phnom Penh / Toul Kork. Apartment with <strong>2 beds / 2 baths</strong>. Monthly rent <strong>650 USD</strong>. Ready to move in.</p></article><article class="source"><div class="source-top"><span>FB / DEMO-003</span><b>Facebook</b></div><p>Siem Reap central area: <strong>1BR apartment</strong> for <strong>$330/month</strong>. One bathroom. Long-term rental.</p></article></div>
+    <section class="results" id="results" aria-labelledby="results-title"><div class="controls result-head"><div><p class="step-caption">STEP 02 / NORMALIZATION AND DEDUPLICATION</p><h2 id="results-title">Results after processing</h2></div><div class="counter" id="counter" aria-live="polite">Ready to run</div></div><div class="result-content" id="result-content" aria-live="polite"><p class="placeholder">Select “Process listings” to see structured fields, the duplicate match and final cards.</p></div></section>
+    <section class="final" aria-labelledby="filter-title"><div class="controls final-head"><div><p class="step-caption">STEP 03 / SEARCH RESULTS</p><h2 id="filter-title">Filter results</h2></div><label class="select-label" for="city">City <select id="city" disabled><option value="all">All cities</option><option value="Phnom Penh">Phnom Penh</option><option value="Siem Reap">Siem Reap</option></select></label></div><div class="cards" id="cards" aria-live="polite"><p class="placeholder">Listings will appear after processing.</p></div></section>
+    <p class="footnote">This example shows the general approach. It contains no real listings or user data, live integrations, machine learning model or external requests. Matches use a simplified set of fields; the production algorithms are more advanced.</p>
+  </main><footer class="footer wrap"><a href="../homeasy.html">← Full case study</a><span>Homeasy · standalone demo app</span></footer>
+</body>
+</html>

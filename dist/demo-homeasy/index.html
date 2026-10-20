@@ -6,13 +6,14 @@
   <meta name="color-scheme" content="light">
   <meta name="description" content="Безопасное интерактивное демо принципов обработки объявлений Homeasy на вымышленных данных.">
   <title>Homeasy — интерактивный пример обработки объявлений</title>
+  <link rel="alternate" hreflang="ru" href="https://portfolio.rustycat.cc/demo-homeasy/"><link rel="alternate" hreflang="en" href="https://portfolio.rustycat.cc/en/demo-homeasy/">
   <link rel="stylesheet" href="demo.css">
   <script src="demo.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#content">Перейти к демонстрации</a>
   <div class="safety"><span class="safety-dot" aria-hidden="true"></span><strong>УЧЕБНАЯ МОДЕЛЬ</strong> Все публикации и результаты вымышлены. Демо работает без сети и не обращается к LLM, парсерам или рабочей базе.</div>
-  <header class="header wrap"><a class="brand" href="../homeasy.html" aria-label="Вернуться к кейсу Homeasy"><span class="logo">⌂</span><span>Homeasy <small>ДЕМОНСТРАЦИЯ ОБРАБОТКИ</small></span></a><a class="back" href="../homeasy.html">← Вернуться к кейсу</a></header>
+  <header class="header wrap"><a class="brand" href="../homeasy.html" aria-label="Вернуться к кейсу Homeasy"><span class="logo">⌂</span><span>Homeasy <small>ДЕМОНСТРАЦИЯ ОБРАБОТКИ</small></span></a><a class="back" href="../homeasy.html">← Вернуться к кейсу</a><a class="back" href="../en/demo-homeasy/index.html" lang="en" hreflang="en">EN</a></header>
   <main id="content" class="wrap">
     <div class="intro"><div><p class="eyebrow">СХЕМА / ИНТЕРАКТИВНЫЙ ПРИМЕР</p><h1>От публикаций<br><em>к чистой выдаче.</em></h1><p class="lede">Попробуйте обработать три условных объявления. Два из них описывают один объект разными словами. Посмотрите, как единые поля помогают найти повтор и сформировать выдачу.</p></div><div class="intro-card"><span>В основном приложении</span><p>Применяются адаптеры источников, LLM, правила, сопоставление текстовых признаков и изображений. Ниже показан упрощённый пример, позволяющий проследить этапы обработки.</p></div></div>
     <div class="controls"><div><p class="step-caption">ШАГ 01 / ИСХОДНЫЕ ЗАПИСИ</p><h2>Три публикации, два объекта</h2></div><div class="actions"><button class="action-primary" id="run" type="button">Обработать объявления <span aria-hidden="true">↗</span></button><button class="action-reset" id="reset" type="button">Сбросить</button></div></div>
