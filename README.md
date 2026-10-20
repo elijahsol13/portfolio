@@ -6,13 +6,13 @@
 
 Подключить этот отдельный репозиторий через **Workers & Pages → Create application → Pages → Connect to Git**.
 
-- GitHub repository: `elijahsol13/portfolio` (после создания и публикации этого репозитория).
+- GitHub repository: `elijahsol13/portfolio`.
 - Production branch: `main`.
 - Framework preset: `None`.
 - Build command: оставить пустой.
 - Build output directory: `dist`.
 - Root directory: корень репозитория.
 
-После успешной первой публикации в настройках Pages добавить Custom domain `portfolio.rustycat.cc` и проверить HTTPS. Ссылки на showcase-репозитории должны стать рабочими до публикации сайта.
+После успешной первой публикации в настройках Pages добавить Custom domain `portfolio.rustycat.cc` и проверить HTTPS. Ссылки на обе опубликованные showcase-витрины уже добавлены в страницы кейсов.
 
 Этот репозиторий содержит исключительно статические публичные файлы. Локальная конфигурация `.openai/` игнорируется Git и не включается в сайт.
