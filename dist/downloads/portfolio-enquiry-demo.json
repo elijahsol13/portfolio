@@ -1,0 +1,154 @@
+{
+  "name": "Portfolio demo — enquiry processing",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "4a6b64f7-891c-4d8f-9a80-64f7e0a8a101",
+      "name": "When clicking 'Execute workflow'",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "return [\n  {\n    json: {\n      id: 'request-001',\n      name: 'Alex Example',\n      email: 'alex@example.test',\n      phone: '+1 (202) 555-0142',\n      message: 'Looking for a demo service',\n      source: 'portfolio-demo',\n    },\n  },\n  {\n    json: {\n      id: 'request-002',\n      name: 'Morgan Sample',\n      email: 'morgan@example.test',\n      phone: '+1 (202) 555-0168',\n      message: 'Please send the service details',\n      source: 'portfolio-demo',\n    },\n  },\n  {\n    json: {\n      id: 'request-003',\n      name: 'Alex Example',\n      email: 'alex@example.test',\n      phone: '+1 (202) 555-0142',\n      message: 'Duplicate submission for testing',\n      source: 'portfolio-demo',\n    },\n  },\n];"
+      },
+      "id": "4a6b64f7-891c-4d8f-9a80-64f7e0a8a102",
+      "name": "Generate fictional enquiries",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        240,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "const items = $input.all();\n\nreturn items.map((item) => {\n  const original = item.json || {};\n  const normalized = {\n    name: String(original.name ?? '').trim().replace(/\\s+/g, ' '),\n    email: String(original.email ?? '').trim().toLowerCase(),\n    phone: String(original.phone ?? '').replace(/\\D/g, ''),\n    message: String(original.message ?? '').trim(),\n  };\n  const valid = Boolean(normalized.name && (normalized.email || normalized.phone));\n\n  return {\n    json: {\n      ...original,\n      normalized,\n      valid,\n      validationError: valid ? null : 'Name and email or phone are required',\n    },\n  };\n});"
+      },
+      "id": "4a6b64f7-891c-4d8f-9a80-64f7e0a8a103",
+      "name": "Normalize and validate",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        480,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "const seen = new Set();\n\nreturn $input.all().map((item) => {\n  const json = item.json || {};\n  const normalized = json.normalized || {};\n  const keys = [\n    normalized.email ? 'email:' + normalized.email : '',\n    normalized.phone ? 'phone:' + normalized.phone : '',\n  ].filter(Boolean);\n  const duplicate = Boolean(json.valid && keys.some((key) => seen.has(key)));\n\n  if (json.valid && !duplicate) {\n    keys.forEach((key) => seen.add(key));\n  }\n\n  return {\n    json: {\n      ...json,\n      duplicate,\n      duplicateReason: duplicate ? 'email_or_phone_seen_in_this_run' : null,\n    },\n  };\n});"
+      },
+      "id": "4a6b64f7-891c-4d8f-9a80-64f7e0a8a104",
+      "name": "Check duplicates in this run",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        720,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "return $input.all().map((item) => {\n  const json = item.json || {};\n  let api;\n\n  if (!json.valid) {\n    api = { status: 'rejected_invalid', recordId: null, externalRequest: false };\n  } else if (json.duplicate) {\n    api = { status: 'skipped_duplicate', recordId: null, externalRequest: false };\n  } else {\n    api = {\n      status: 'created_demo',\n      recordId: 'DEMO-' + String(json.id || 'new').toUpperCase(),\n      externalRequest: false,\n    };\n  }\n\n  return { json: { ...json, api } };\n});"
+      },
+      "id": "4a6b64f7-891c-4d8f-9a80-64f7e0a8a105",
+      "name": "Mock API result",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        960,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "return $input.all().map((item) => {\n  const json = item.json || {};\n  const status = json.api?.status || 'unknown';\n  let text;\n\n  if (status === 'created_demo') {\n    text = 'New demo enquiry ' + json.id + ' from ' + json.normalized.name + ' is ready for review.';\n  } else if (status === 'skipped_duplicate') {\n    text = 'Duplicate demo enquiry ' + json.id + ' was skipped.';\n  } else {\n    text = 'Demo enquiry ' + json.id + ' was rejected: ' + (json.validationError || 'unknown validation error') + '.';\n  }\n\n  return {\n    json: {\n      ...json,\n      telegram: {\n        send: false,\n        destination: 'not_configured',\n        text,\n      },\n    },\n  };\n});"
+      },
+      "id": "4a6b64f7-891c-4d8f-9a80-64f7e0a8a106",
+      "name": "Prepare Telegram message",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1200,
+        0
+      ]
+    }
+  ],
+  "connections": {
+    "When clicking 'Execute workflow'": {
+      "main": [
+        [
+          {
+            "node": "Generate fictional enquiries",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate fictional enquiries": {
+      "main": [
+        [
+          {
+            "node": "Normalize and validate",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Normalize and validate": {
+      "main": [
+        [
+          {
+            "node": "Check duplicates in this run",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check duplicates in this run": {
+      "main": [
+        [
+          {
+            "node": "Mock API result",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Mock API result": {
+      "main": [
+        [
+          {
+            "node": "Prepare Telegram message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true
+  },
+  "pinData": {},
+  "versionId": "5b2f9bb0-98e2-4a4c-b6d3-5a2d0b4a1a01",
+  "meta": {
+    "templateCredsSetupCompleted": false
+  },
+  "tags": []
+}

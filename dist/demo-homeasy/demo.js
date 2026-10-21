@@ -29,7 +29,7 @@
   const escapeHtml = x => String(x).replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
   function showListings() {
     const filtered = unique.filter(x => city.value === 'all' || x.city === city.value);
-    cards.innerHTML = filtered.length ? filtered.map(x => `<article class="listing"><div class="listing-head"><span>ВЫМЫШЛЕННЫЙ ОБЪЕКТ</span><b>$${x.usdPerMonth}</b></div><div class="listing-body"><h3>${escapeHtml(x.kind)} · ${x.bedrooms} спальн.</h3><p>${escapeHtml(x.city)} · ${escapeHtml(x.district)} · аренда / месяц</p><p class="origin">Источники: ${x.sources.map(escapeHtml).join(' + ')}</p></div></article>`).join('') : '<p class="placeholder">В выбранном городе нет объектов в этом демонстрационном наборе.</p>';
+    cards.innerHTML = filtered.length ? filtered.map(x => `<article class="listing"><div class="listing-head"><span>ВЫМЫШЛЕННЫЙ ОБЪЕКТ</span><b>$${x.usdPerMonth}</b></div><div class="listing-body"><h3>${escapeHtml(x.kind)} · ${x.bedrooms} спальн.</h3><p>${escapeHtml(x.city)} · ${escapeHtml(x.district)} · аренда в месяц</p><p class="origin">Источники публикаций: ${x.sources.map(escapeHtml).join(' + ')}</p></div></article>`).join('') : '<p class="placeholder">В выбранном городе нет объектов в этом демонстрационном наборе.</p>';
   }
   function process() {
     const normalized = sample.map(normalize);
@@ -41,7 +41,7 @@
     }
     unique = [...seen.values()];
     const countDuplicates = normalized.length - unique.length;
-    resultContent.innerHTML = `<div class="normalized">${normalized.map(x => `<div class="norm"><span class="name">${escapeHtml(x.id)} · ${escapeHtml(x.source)}</span><pre>${escapeHtml(JSON.stringify({city:x.city,district:x.district,bedrooms:x.bedrooms,usdPerMonth:x.usdPerMonth,kind:x.kind},null,2))}</pre></div>`).join('')}</div><div class="dedup"><strong>Обнаружен ${countDuplicates} повтор</strong>Объявления DEMO-001 и DEMO-002 совпадают по городу, району, спальням, цене и типу жилья. Из ${normalized.length} публикаций сформированы ${unique.length} карточки.</div>`;
+    resultContent.innerHTML = `<div class="normalized">${normalized.map(x => `<div class="norm"><span class="name">${escapeHtml(x.id)} · ${escapeHtml(x.source)}</span><pre>${escapeHtml(JSON.stringify({city:x.city,district:x.district,bedrooms:x.bedrooms,usdPerMonth:x.usdPerMonth,kind:x.kind},null,2))}</pre></div>`).join('')}</div><div class="dedup"><strong>Найден повтор: ${countDuplicates}</strong>Объявления DEMO-001 и DEMO-002 совпадают по городу, району, спальням, цене и типу жилья. Обработано публикаций: ${normalized.length}; уникальных объектов: ${unique.length}.</div>`;
     counter.textContent = `${normalized.length} исходных → ${unique.length} объекта`;
     city.disabled = false;
     run.disabled = true;

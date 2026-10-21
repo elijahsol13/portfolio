@@ -1,0 +1,146 @@
+%PDF-1.4
+%PortfolioCV
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.2 841.92] /Resources << /Font << /F1 5 0 R /F2 6 0 R /F3 7 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 9871 >>
+stream
+q 1.000 1.000 1.000 rg 0.00 0.00 595.20 841.92 re f Q
+q 0.080 0.220 0.200 rg 0.00 695.00 595.20 146.92 re f Q
+q 0.840 0.940 0.680 rg 0.00 695.00 7.00 146.92 re f Q
+q 0.840 0.940 0.680 rg 40.00 711.00 34.00 3.00 re f Q
+BT /F2 27.00 Tf 1.000 1.000 1.000 rg 1 0 0 1 40.00 796.00 Tm (ILIA VESHTORT) Tj ET
+BT /F2 10.20 Tf 0.840 0.940 0.680 rg 1 0 0 1 40.00 767.00 Tm (WEB APPLICATIONS  /  AUTOMATION  /  INTEGRATIONS) Tj ET
+BT /F1 8.30 Tf 1.000 1.000 1.000 rg 1 0 0 1 40.00 741.00 Tm (Siem Reap, Cambodia  |  Remote) Tj ET
+BT /F1 8.10 Tf 1.000 1.000 1.000 rg 1 0 0 1 40.00 725.00 Tm (elijah.rustycat@gmail.com  |  t.me/lacr0s  |  linkedin.com/in/iliaveshtort) Tj ET
+BT /F2 7.10 Tf 0.720 0.840 0.770 rg 1 0 0 1 478.00 802.00 Tm (PROFILE) Tj ET
+BT /F2 13.00 Tf 1.000 1.000 1.000 rg 1 0 0 1 478.00 788.00 Tm (2026) Tj ET
+q 0.760 0.840 0.790 RG 0.80 w 40.00 684.00 m 555.00 684.00 l S Q
+q 0.950 0.970 0.940 rg 386.00 65.00 169.00 604.00 re f Q
+q 0.820 0.870 0.830 RG 0.70 w 376.00 65.00 m 376.00 670.00 l S Q
+BT /F2 9.10 Tf 0.120 0.380 0.320 rg 1 0 0 1 40.00 665.00 Tm (PROFILE) Tj ET
+q 0.820 0.870 0.830 RG 0.65 w 40.00 658.00 m 358.00 658.00 l S Q
+BT /F1 8.35 Tf 0.160 0.220 0.210 rg 1 0 0 1 40.00 644.00 Tm (I build web applications and workflow automation for small) Tj ET
+BT /F1 8.35 Tf 0.160 0.220 0.210 rg 1 0 0 1 40.00 633.00 Tm (businesses: connect interfaces, APIs, data and Telegram, deploy) Tj ET
+BT /F1 8.35 Tf 0.160 0.220 0.210 rg 1 0 0 1 40.00 622.00 Tm (services on Linux/VPS and support them after launch. My systems) Tj ET
+BT /F1 8.35 Tf 0.160 0.220 0.210 rg 1 0 0 1 40.00 611.00 Tm (administration background helps me design services that remain) Tj ET
+BT /F1 8.35 Tf 0.160 0.220 0.210 rg 1 0 0 1 40.00 600.00 Tm (practical to operate.) Tj ET
+BT /F2 9.10 Tf 0.120 0.380 0.320 rg 1 0 0 1 40.00 579.00 Tm (SELECTED PROJECTS) Tj ET
+q 0.820 0.870 0.830 RG 0.65 w 40.00 572.00 m 358.00 572.00 l S Q
+BT /F2 9.00 Tf 0.080 0.220 0.200 rg 1 0 0 1 40.00 558.00 Tm (AUTO SERVICE WEBSITE + ORDER SYSTEM) Tj ET
+BT /F3 7.80 Tf 0.360 0.430 0.400 rg 1 0 0 1 40.00 545.00 Tm (Business project  |  Ongoing support) Tj ET
+BT /F1 7.80 Tf 0.160 0.220 0.210 rg 1 0 0 1 40.00 533.00 Tm (Built and maintain a public website and an internal order workflow for an) Tj ET
+BT /F1 7.80 Tf 0.160 0.220 0.210 rg 1 0 0 1 40.00 522.90 Tm (operating auto service. Connected enquiries to order records and Telegram) Tj ET
+BT /F1 7.80 Tf 0.160 0.220 0.210 rg 1 0 0 1 40.00 512.80 Tm (alerts; implemented role-based access, job statuses, scheduling and staff) Tj ET
+BT /F1 7.80 Tf 0.160 0.220 0.210 rg 1 0 0 1 40.00 502.70 Tm (payment calculations.) Tj ET
+BT /F2 7.45 Tf 0.120 0.380 0.320 rg 1 0 0 1 40.00 491.60 Tm (Stack: Next.js, TypeScript, PostgreSQL, Prisma, Docker) Tj ET
+BT /F2 9.00 Tf 0.080 0.220 0.200 rg 1 0 0 1 40.00 474.60 Tm (HOMEASY - PROPERTY SEARCH MVP) Tj ET
+BT /F3 7.80 Tf 0.360 0.430 0.400 rg 1 0 0 1 40.00 461.60 Tm (Personal product  |  In development) Tj ET
+BT /F1 7.80 Tf 0.160 0.220 0.210 rg 1 0 0 1 40.00 449.60 Tm (Developing a property-search prototype that collects listing data,) Tj ET
+BT /F1 7.80 Tf 0.160 0.220 0.210 rg 1 0 0 1 40.00 439.50 Tm (normalizes fields, detects duplicates, exposes data through an API and) Tj ET
+BT /F1 7.80 Tf 0.160 0.220 0.210 rg 1 0 0 1 40.00 429.40 Tm (connects a Telegram bot with a Mini App. Focus: bringing data sources,) Tj ET
+BT /F1 7.80 Tf 0.160 0.220 0.210 rg 1 0 0 1 40.00 419.30 Tm (backend logic and interface into one product.) Tj ET
+BT /F2 7.45 Tf 0.120 0.380 0.320 rg 1 0 0 1 40.00 408.20 Tm (Stack: TypeScript, Node.js, React, SQLite, Telegram) Tj ET
+BT /F2 9.10 Tf 0.120 0.380 0.320 rg 1 0 0 1 40.00 390.20 Tm (PROFESSIONAL EXPERIENCE) Tj ET
+q 0.820 0.870 0.830 RG 0.65 w 40.00 383.20 m 358.00 383.20 l S Q
+BT /F2 8.45 Tf 0.080 0.220 0.200 rg 1 0 0 1 40.00 369.20 Tm (IT SUPPORT SPECIALIST  |  ARMAN IT SYSTEMS LLC) Tj ET
+BT /F3 7.50 Tf 0.360 0.430 0.400 rg 1 0 0 1 40.00 357.20 Tm (Apr 2024 - May 2026  |  Systems administration duties) Tj ET
+BT /F1 7.65 Tf 0.160 0.220 0.210 rg 1 0 0 1 40.00 345.20 Tm (Supported infrastructure for 800+ users and automated recurring operations) Tj ET
+BT /F1 7.65 Tf 0.160 0.220 0.210 rg 1 0 0 1 40.00 335.50 Tm (with PowerShell. Cut one RDS incident workflow from about 10 minutes to 1) Tj ET
+BT /F1 7.65 Tf 0.160 0.220 0.210 rg 1 0 0 1 40.00 325.80 Tm (minute and reduced offboarding access closure from 5-7 minutes to about 1) Tj ET
+BT /F1 7.65 Tf 0.160 0.220 0.210 rg 1 0 0 1 40.00 316.10 Tm (minute. Administered identity, network and business systems and handled) Tj ET
+BT /F1 7.65 Tf 0.160 0.220 0.210 rg 1 0 0 1 40.00 306.40 Tm (incidents through ServiceDesk.) Tj ET
+BT /F2 8.45 Tf 0.080 0.220 0.200 rg 1 0 0 1 40.00 288.70 Tm (IT SUPPORT SPECIALIST) Tj ET
+BT /F3 7.50 Tf 0.360 0.430 0.400 rg 1 0 0 1 40.00 276.70 Tm (May 2022 - Sep 2023) Tj ET
+BT /F1 7.65 Tf 0.160 0.220 0.210 rg 1 0 0 1 40.00 264.70 Tm (Built Python utilities for Excel data processing; supported SaaS users and) Tj ET
+BT /F1 7.65 Tf 0.160 0.220 0.210 rg 1 0 0 1 40.00 255.00 Tm (configured business workflows and automation. Assisted with Yandex Cloud) Tj ET
+BT /F1 7.65 Tf 0.160 0.220 0.210 rg 1 0 0 1 40.00 245.30 Tm (VPS, Mango Office telephony and a WordPress website.) Tj ET
+q 0.080 0.220 0.200 rg 40.00 78.00 318.00 65.00 re f Q
+q 0.840 0.940 0.680 rg 40.00 78.00 4.00 65.00 re f Q
+BT /F2 8.20 Tf 0.840 0.940 0.680 rg 1 0 0 1 54.00 125.00 Tm (FROM REQUIREMENTS TO SUPPORT) Tj ET
+BT /F2 7.25 Tf 1.000 1.000 1.000 rg 1 0 0 1 54.00 109.00 Tm (Scope  ->  Architecture  ->  Implementation  ->  Verification) Tj ET
+BT /F1 7.50 Tf 0.840 0.900 0.860 rg 1 0 0 1 54.00 94.00 Tm (Deployment, monitoring and maintenance when required.) Tj ET
+BT /F2 9.10 Tf 0.120 0.380 0.320 rg 1 0 0 1 410.00 650.00 Tm (TECHNICAL SKILLS) Tj ET
+q 0.820 0.870 0.830 RG 0.65 w 410.00 643.00 m 543.00 643.00 l S Q
+BT /F2 7.80 Tf 0.080 0.220 0.200 rg 1 0 0 1 410.00 629.00 Tm (WEB & DATA) Tj ET
+BT /F1 7.45 Tf 0.360 0.430 0.400 rg 1 0 0 1 410.00 617.00 Tm (TypeScript, JavaScript, React,) Tj ET
+BT /F1 7.45 Tf 0.360 0.430 0.400 rg 1 0 0 1 410.00 607.40 Tm (Next.js, Node.js, SQL,) Tj ET
+BT /F1 7.45 Tf 0.360 0.430 0.400 rg 1 0 0 1 410.00 597.80 Tm (PostgreSQL, SQLite, Prisma) Tj ET
+BT /F2 7.80 Tf 0.080 0.220 0.200 rg 1 0 0 1 410.00 580.20 Tm (AUTOMATION & APIS) Tj ET
+BT /F1 7.45 Tf 0.360 0.430 0.400 rg 1 0 0 1 410.00 568.20 Tm (n8n, Python, PowerShell, Bash,) Tj ET
+BT /F1 7.45 Tf 0.360 0.430 0.400 rg 1 0 0 1 410.00 558.60 Tm (REST APIs, Telegram bots) Tj ET
+BT /F2 7.80 Tf 0.080 0.220 0.200 rg 1 0 0 1 410.00 541.00 Tm (DEPLOYMENT) Tj ET
+BT /F1 7.45 Tf 0.360 0.430 0.400 rg 1 0 0 1 410.00 529.00 Tm (Linux/Ubuntu, Docker/Compose,) Tj ET
+BT /F1 7.45 Tf 0.360 0.430 0.400 rg 1 0 0 1 410.00 519.40 Tm (VPS, DNS, SSL/TLS, reverse) Tj ET
+BT /F1 7.45 Tf 0.360 0.430 0.400 rg 1 0 0 1 410.00 509.80 Tm (proxy, Cloudflare) Tj ET
+BT /F2 7.80 Tf 0.080 0.220 0.200 rg 1 0 0 1 410.00 492.20 Tm (SUPPORT & RELIABILITY) Tj ET
+BT /F1 7.45 Tf 0.360 0.430 0.400 rg 1 0 0 1 410.00 480.20 Tm (Monitoring, logs, backups,) Tj ET
+BT /F1 7.45 Tf 0.360 0.430 0.400 rg 1 0 0 1 410.00 470.60 Tm (updates, incident) Tj ET
+BT /F1 7.45 Tf 0.360 0.430 0.400 rg 1 0 0 1 410.00 461.00 Tm (troubleshooting, ServiceDesk) Tj ET
+BT /F2 9.10 Tf 0.120 0.380 0.320 rg 1 0 0 1 410.00 442.40 Tm (EDUCATION) Tj ET
+q 0.820 0.870 0.830 RG 0.65 w 410.00 435.40 m 543.00 435.40 l S Q
+BT /F2 7.20 Tf 0.080 0.220 0.200 rg 1 0 0 1 410.00 421.40 Tm (MOSCOW STATE TECHNICAL) Tj ET
+BT /F2 7.20 Tf 0.080 0.220 0.200 rg 1 0 0 1 410.00 411.40 Tm (UNIVERSITY OF CIVIL AVIATION) Tj ET
+BT /F1 7.15 Tf 0.360 0.430 0.400 rg 1 0 0 1 410.00 400.40 Tm (Applied Mathematics and Computing) Tj ET
+BT /F1 7.15 Tf 0.360 0.430 0.400 rg 1 0 0 1 410.00 391.30 Tm (/ Information Security of) Tj ET
+BT /F1 7.15 Tf 0.360 0.430 0.400 rg 1 0 0 1 410.00 382.20 Tm (Telecommunication Systems.) Tj ET
+BT /F1 7.15 Tf 0.360 0.430 0.400 rg 1 0 0 1 410.00 373.10 Tm (Incomplete higher education,) Tj ET
+BT /F1 7.15 Tf 0.360 0.430 0.400 rg 1 0 0 1 410.00 364.00 Tm (2020.) Tj ET
+BT /F2 7.20 Tf 0.080 0.220 0.200 rg 1 0 0 1 410.00 349.90 Tm (GUSEV POLYTECHNIC COLLEGE) Tj ET
+BT /F1 7.15 Tf 0.360 0.430 0.400 rg 1 0 0 1 410.00 338.90 Tm (Technician-mechanic; industrial) Tj ET
+BT /F1 7.15 Tf 0.360 0.430 0.400 rg 1 0 0 1 410.00 329.80 Tm (equipment installation and) Tj ET
+BT /F1 7.15 Tf 0.360 0.430 0.400 rg 1 0 0 1 410.00 320.70 Tm (operation, 2010.) Tj ET
+BT /F2 9.10 Tf 0.120 0.380 0.320 rg 1 0 0 1 410.00 306.60 Tm (LANGUAGES) Tj ET
+q 0.820 0.870 0.830 RG 0.65 w 410.00 299.60 m 543.00 299.60 l S Q
+BT /F2 7.80 Tf 0.080 0.220 0.200 rg 1 0 0 1 410.00 285.60 Tm (Russian - Native) Tj ET
+BT /F1 7.80 Tf 0.360 0.430 0.400 rg 1 0 0 1 410.00 273.60 Tm (English - B1) Tj ET
+BT /F1 7.80 Tf 0.360 0.430 0.400 rg 1 0 0 1 410.00 261.60 Tm (German - B1) Tj ET
+BT /F2 9.10 Tf 0.120 0.380 0.320 rg 1 0 0 1 410.00 241.60 Tm (WORKING APPROACH) Tj ET
+q 0.820 0.870 0.830 RG 0.65 w 410.00 234.60 m 543.00 234.60 l S Q
+BT /F1 7.35 Tf 0.360 0.430 0.400 rg 1 0 0 1 410.00 220.60 Tm (Clarify the business task,) Tj ET
+BT /F1 7.35 Tf 0.360 0.430 0.400 rg 1 0 0 1 410.00 211.10 Tm (choose a maintainable solution,) Tj ET
+BT /F1 7.35 Tf 0.360 0.430 0.400 rg 1 0 0 1 410.00 201.60 Tm (integrate services, verify) Tj ET
+BT /F1 7.35 Tf 0.360 0.430 0.400 rg 1 0 0 1 410.00 192.10 Tm (critical flows and stay) Tj ET
+BT /F1 7.35 Tf 0.360 0.430 0.400 rg 1 0 0 1 410.00 182.60 Tm (responsible for deployment and) Tj ET
+BT /F1 7.35 Tf 0.360 0.430 0.400 rg 1 0 0 1 410.00 173.10 Tm (post-launch support.) Tj ET
+q 0.820 0.870 0.830 RG 0.65 w 40.00 48.00 m 555.00 48.00 l S Q
+BT /F2 7.20 Tf 0.120 0.380 0.320 rg 1 0 0 1 40.00 32.00 Tm (portfolio.rustycat.cc) Tj ET
+BT /F1 7.20 Tf 0.360 0.430 0.400 rg 1 0 0 1 174.00 32.00 Tm (Public CV  |  Updated October 2026) Tj ET
+BT /F2 6.70 Tf 0.360 0.430 0.400 rg 1 0 0 1 495.00 32.00 Tm (PAGE 1 / 1) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+7 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding >>
+endobj
+8 0 obj
+<< /Title (Ilia Veshtort - Web Applications and Automation) /Author (Ilia Veshtort) /Subject (Public professional CV) >>
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000022 00000 n 
+0000000071 00000 n 
+0000000128 00000 n 
+0000000279 00000 n 
+0000010201 00000 n 
+0000010298 00000 n 
+0000010400 00000 n 
+0000010505 00000 n 
+trailer
+<< /Size 9 /Root 1 0 R /Info 8 0 R >>
+startxref
+10641
+%%EOF

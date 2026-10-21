@@ -10,3 +10,7 @@
 @media(max-width:470px){.kanban{grid-template-columns:1fr}.column{min-height:auto}.stat{padding:14px}.stat strong{font-size:26px}.info-grid{grid-template-columns:1fr 1fr;gap:18px 8px}.box{padding:16px}.cal-toolbar{flex-wrap:wrap}.app-header .offline{font-size:9px}.panel-label span{font-size:8px}}
 @media(max-width:850px){.app{grid-template-columns:minmax(0,1fr)}.sidebar{min-width:0;max-width:100%}.sidebar nav{min-width:0;max-width:100%;width:100%}.sidebar nav a{flex:0 0 auto}}
 .demo-banner a+a{margin-left:12px}
+
+html[lang="ru"] h1,html[lang="ru"] h2,html[lang="ru"] h3{letter-spacing:-.02em}
+html[lang="ru"] .logo{letter-spacing:0}
+html[lang="ru"] :lang(en){letter-spacing:.02em;font-kerning:normal}
